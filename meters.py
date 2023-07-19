@@ -1,5 +1,22 @@
 # Databricks notebook source
 # MAGIC %md
+# MAGIC
+# MAGIC <!----------------------------------------------------------------------
+# MAGIC    Copyright 2023 Databricks Inc.
+# MAGIC
+# MAGIC    Licensed under the Apache License, Version 2.0 (the "License");
+# MAGIC    you may not use this file except in compliance with the License.
+# MAGIC    You may obtain a copy of the License at
+# MAGIC
+# MAGIC        http://www.apache.org/licenses/LICENSE-2.0
+# MAGIC
+# MAGIC    Unless required by applicable law or agreed to in writing, software
+# MAGIC    distributed under the License is distributed on an "AS IS" BASIS,
+# MAGIC    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# MAGIC    See the License for the specific language governing permissions and
+# MAGIC    limitations under the License.
+# MAGIC ----------------------------------------------------------------------->
+# MAGIC
 # MAGIC # Virtual Meter Aggregation
 # MAGIC
 # MAGIC Suppose you have the following graph related situation:
@@ -11,6 +28,8 @@
 # MAGIC > and keep that aggregate going through each vertices. We would only know the 
 # MAGIC > physical readings to start. The attached image is what I was thinking could 
 # MAGIC > happen by filling out the aggregates at it virtual.
+# MAGIC
+# MAGIC ![](https://github.com/coreyabs-db/virtual-meters-graph/blob/main/meters.png?raw=true)
 # MAGIC
 # MAGIC This notebook provides an example of how to implement the desired aggregation
 # MAGIC using the [message passing API](https://graphframes.github.io/graphframes/docs/_site/api/python/graphframes.lib.html) in [GraphFrames](https://graphframes.github.io/graphframes/docs/_site/index.html) on [Apache Spark](https://spark.apache.org/).
