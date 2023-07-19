@@ -51,14 +51,10 @@ from pyspark.sql import DataFrame
 from graphframes import GraphFrame
 from graphframes.lib import AggregateMessages as AM
 
-from IPython.display import Image
-
 from warnings import filterwarnings
 
 filterwarnings('ignore', 'DataFrame.sql_ctx is an internal property')
 filterwarnings('ignore', 'DataFrame constructor is internal')
-
-Image(filename='meters.png', retina=True)
 
 # COMMAND ----------
 
